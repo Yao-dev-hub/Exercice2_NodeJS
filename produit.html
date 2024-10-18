@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span class="fw-bold text-danger">E</span>store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active ms-2" aria-current="page" href="/">accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href="/apropos">a propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href=/produit">produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href="/service">service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href="/signIn">s'inscrire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href="/login">se connecter</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex border me-5" id="formSearch">
+                        <span class="input-group-text" id="search"><i class="fa fa-search"
+                                aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" id="inputSearch" placeholder="Username"
+                            aria-label="Username" aria-describedby="addon-wrapping">
+                    </form>
+                    <div class="panier d-flex me-5">
+                        <div class="col-lg-12 mx-auto">
+                            <span class="icon-arrondie"><i class="fa fa-heart me-5" aria-hidden="true"></i></span>
+                            <span class="icon-arrondie"><i class="fa fa-shopping-cart " aria-hidden="true"></i><sup
+                                    class="fs-5">0</sup></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--  -->
+        <section class="banniere-produits">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <h1 class="fw-blod ">Découvrez tous nos produits ici</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="produits">
+            <div class="container">
+                <div class="row">
+                    <!-- first column for searching -->
+                    <div class="col-lg-4 pt-5">
+                        <form>
+                            <div class="col-lg-12">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control left-arrondi p-3 " placeholder="reherche"
+                                        aria-label="Username" aria-describedby="basic-addon1">
+                                    <span class="input-group-text  right-arrondi" id="basic-addon1"><i
+                                            class="fa fa-search" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-white dropdown-toggle p-3 arrondi" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">categories</button>
+                                    <ul class="dropdown-menu dropdown-menu-end m-2 w-100">
+                                        <li><a class="dropdown-item" href="#">hommes</a></li>
+                                        <li><a class="dropdown-item" href="#">femmes</a></li>
+                                        <li><a class="dropdown-item" href="#">enfants</a></li>
+                                        <li><a class="dropdown-item" href="#">toutes les categories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-white dropdown-toggle p-3 arrondi" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">types</button>
+                                    <ul class="dropdown-menu dropdown-menu-end m-2 w-100">
+                                        <li><a class="dropdown-item" href="#">habits</a></li>
+                                        <li><a class="dropdown-item" href="#">pantalon</a></li>
+                                        <li><a class="dropdown-item" href="#">chemise</a></li>
+                                        <li><a class="dropdown-item" href="#">tous les types</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-column justify-content-center align-content-center">
+                        <!-- première ligne -->
+                        <div class="row d-flex justify-content-evenly p-5">
+                            <div class="col-lg-6 pb-4">
+                                <!-- 1 -->
+                                <div class="card">
+                                    <img src="./img/12.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ********** separation ********** -->
+                            <div class="col-lg-6">
+                                <!-- 2 -->
+                                <div class="card">
+                                    <img src="./img/4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- deuxième ligne -->
+
+                        <div class="row d-flex justify-content-evenly p-5">
+                            <div class="col-lg-6 pb-4 ">
+                                <!-- 1 -->
+                                <div class="card">
+                                    <img src="./img/12.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ********** separation ********** -->
+                            <div class="col-lg-6">
+                                <!-- 2 -->
+                                <div class="card">
+                                    <img src="./img/4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- troisième ligne -->
+                        <div class="row d-flex justify-content-evenly p-5">
+                            <div class="col-lg-6 pb-4 ">
+                                <!-- 1 -->
+                                <div class="card">
+                                    <img src="./img/12.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ********** separation ********** -->
+                            <div class="col-lg-6">
+                                <!-- 2 -->
+                                <div class="card">
+                                    <img src="./img/4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- quartrième ligne -->
+                        <div class="row d-flex justify-content-evenly p-5">
+                            <div class="col-lg-6 pb-4 ">
+                                <!-- 1 -->
+                                <div class="card">
+                                    <img src="./img/12.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ********** separation ********** -->
+                            <div class="col-lg-6">
+                                <!-- 2 -->
+                                <div class="card">
+                                    <img src="./img/4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- cinquième ligne -->
+                        <div class="row d-flex justify-content-evenly p-5">
+                            <div class="col-lg-6 pb-4 ">
+                                <!-- 1 -->
+                                <div class="card">
+                                    <img src="./img/12.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ********** separation ********** -->
+                            <div class="col-lg-6">
+                                <!-- 2 -->
+                                <div class="card">
+                                    <img src="./img/4.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <div class="row">
+                                            <hr>
+                                        </div>
+                                        <div class="col-lg-12 d-flex justify-content-evenly py-2">
+                                            <a href="#" class="btn btn-outline-warning">Voir détails</a>
+                                            <a href="#" class="btn btn-outline-success">Ajout panier</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <button class="btn btn-info fw-bold text-white p-2 rounded-2 w-25 text-center mx-auto">voir
+                                plus</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <!-- Section services produits -->
+         <section class="services-prd">
+            <div class="container border rounded-5 p-5">
+                <div class="row">
+                    <div class="col-lg-4 my-3">
+                        <div class="card p-2 border-1" style="width: 18rem;">
+                            <i class="fas fa-truck text-center fs-1"></i>
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="col-lg-4 my-3">
+                        <div class="card p-2 border-1" style="width: 18rem;">
+                            <i class="fas fa-undo text-center fs-1"></i>
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="col-lg-4 my-3">
+                        <div class="card p-2 border-1" style="width: 18rem;">
+                            <i class="fas fa-credit-card text-center fs-1"></i>
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+         </section>
+         <!--  -->
+         <section class="abonnement mt-5 p-5">
+            <div class="container">
+                <div class="row d-flex flex-column align-items-center">
+                    <div class="col-lg-6 py-3 mx-auto">
+                        <h3 class="text-center mx-auto mb-5 fw-bolder">Abonnez-vous et recevez des promotions et des mises à jour !</h3>
+                        <p class="text-center mx-auto mb-4">Encouragez sans effort des stratégies de croissance entièrement étudiées et des sources internes</p>
+                        <p class="text-center mx-auto">ou "organiques" interopérables, tout en innovant de manière crédible avec des méthodes internes granulaires.</p>
+                    </div>
+                    <div class="col-lg-6 mx-auto py-4">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="input-group mb-3">
+                                        <input type="email" class="form-control p-3 arrondi-left" placeholder="Entrez votre email ..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <button class="btn w-25  arrondi-right " type="button" id="button-addon2">s'abonner</button>
+                                      </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!--  -->
+         <!-- footer -->
+        <section class="footer p-5 mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p><a class="navbar-brand" href="#"><span class="fw-bold text-danger">E</span>store</a></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo similique illo maxime, ipsum
+                            ipsa quas amet aspernatur praesentium distinctio molestias impedit numquam magni vitae hic
+                            aliquam ex quibusdam qui! Magni!</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="text-center">liens rapides</h4>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-auto text-center" aria-current="page" href="#">accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">a propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">produits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">s'inscrire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">se connecter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="text-center">liens produits</h4>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-auto text-center" aria-current="page" href="#">enfants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">femmes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">hommes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="text-center"> liens réseaux sociaux</h4>
+                        <span class="mx-auto text-center d-flex justify-content-evenly mt-4">
+                            <i class="fab fa-whatsapp fs-4"></i>
+                            <i class="fab fa-facebook fs-4"></i>
+                            <i class="fab fa-linkedin fs-4" aria-hidden="true"></i>
+                            <i class="fab fa-youtube fs-4" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./js/bootstrap.bundle.js"></script>
+        <script src="./js/main.js" type="module"></script>
+    </body>
+
+    </html>

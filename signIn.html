@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span class="fw-bold text-danger">E</span>store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active ms-2" aria-current="page" href="/">accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href="/apropos">a propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href="/produit">produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href="/inscription">s'inscrire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href="/connexion">se connecter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-2" href="/contact">contactez-nous</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex border me-5" id="formSearch">
+                        <span class="input-group-text" id="search"><i class="fa fa-search"
+                                aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" id="inputSearch" placeholder="Username"
+                            aria-label="Username" aria-describedby="addon-wrapping">
+                    </form>
+                    <div class="panier d-flex me-5">
+                        <div class="col-lg-12 mx-auto">
+                            <span class="icon-arrondie"><i class="fa fa-heart me-5" aria-hidden="true"></i></span>
+                            <span class="icon-arrondie"><i class="fa fa-shopping-cart " aria-hidden="true"></i><sup
+                                    class="fs-5">0</sup></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--  -->
+        <section class="banniere-login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="text-white text-center">Créer un compte ici </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inscription">
+            <div class="container">
+                <div class="row">
+                    <!-- 1 -->
+                    <div class="col-lg-5 left"></div>
+                    <!-- 2 -->
+                    <div class="col-lg-5 right">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6 ">
+                                    <div class="mb-3">
+                                        <label for="nom" class="form-label">Votre nom</label>
+                                        <input type="text" class="form-control p-3 bordure-bas" id="nom"
+                                            placeholder="nom">
+                                    </div>
+                                </div>
+
+                                <!--  -->
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="prenom" class="form-label">Votre prenom</label>
+                                        <input type="text" class="form-control p-3 bordure-bas" id="prenom"
+                                            placeholder="prenom">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-12 ">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control p-3 bordure-bas" id="email"
+                                        placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-12 my-2">
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Mot de passe</label>
+                                    <input type="password" class="form-control p-3 bordure-bas" id="password"
+                                        placeholder="mot de passe">
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-12 mb-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        déjà inscrit ? <a href="login.html" class="ms-5 text-decoration-none">se connecter</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="col-lg-12 mt-4">
+                                <div class="row ">
+                                    <button type="submit" class="btn btn-outline-info rounded-2 p-3 fw-bold">s'inscrire</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- barre horizontale -->
+        <div class="bar-login">
+            <div class="container">
+                <hr>
+            </div>
+        </div>
+        <!-- footer -->
+        <section class="footer p-5 mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p><a class="navbar-brand" href="#"><span class="fw-bold text-danger">E</span>store</a></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo similique illo maxime, ipsum
+                            ipsa quas amet aspernatur praesentium distinctio molestias impedit numquam magni vitae hic
+                            aliquam ex quibusdam qui! Magni!</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="text-center">liens rapides</h4>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-auto text-center" aria-current="page" href="#">accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">a propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">produits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">s'inscrire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">se connecter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="text-center">liens produits</h4>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-auto text-center" aria-current="page" href="#">enfants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">femmes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">hommes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="text-center"> liens réseaux sociaux</h4>
+                        <span class="mx-auto text-center d-flex justify-content-evenly mt-4">
+                            <i class="fab fa-whatsapp fs-4"></i>
+                            <i class="fab fa-facebook fs-4"></i>
+                            <i class="fab fa-linkedin fs-4" aria-hidden="true"></i>
+                            <i class="fab fa-youtube fs-4" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/bootstrap.bundle.js"></script>
+        <script src="./js/main.js" type="module"></script>
+    </body>
+
+    </html>

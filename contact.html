@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="fw-bold text-danger">E</span>store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active ms-2" aria-current="page" href="/">accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2" href="/apropos">a propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2" href="/produit">produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2" href="/inscription">s'inscrire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2" href="/connexion">se connecter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2" href="/contact">contactez-nous</a>
+                    </li>
+                </ul>
+                <form class="d-flex border me-5" id="formSearch">
+                    <span class="input-group-text" id="search"><i class="fa fa-search"
+                            aria-hidden="true"></i></span>
+                    <input type="text" class="form-control" id="inputSearch" placeholder="Username"
+                        aria-label="Username" aria-describedby="addon-wrapping">
+                </form>
+                <div class="panier d-flex me-5">
+                    <div class="col-lg-12 mx-auto">
+                        <span class="icon-arrondie"><i class="fa fa-heart me-5" aria-hidden="true"></i></span>
+                        <span class="icon-arrondie"><i class="fa fa-shopping-cart " aria-hidden="true"></i><sup
+                                class="fs-5">0</sup></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--  -->
+
+    <!-- Section banniere de notre de notre page contact -->
+    <section class="banniere-contact">
+        <div class="container">
+            <div class="row">
+                <h1>Contactez-Nous !</h1>
+                <p>Nous sommes disponibles pour toutes vos préocupation 24h/24 et 7j/7 alors n'hésiter pas </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section contact -->
+    <section class="contact py-5 bg-light">
+        <div class="container mx-auto">
+            <h1 class="text-center my-5">contactez-nous !</h1>
+            <form id="submitForm" class="mx-auto p-4">
+                <div class="row d-flex justify-content-between">
+
+                    <div class="col-lg-5">
+
+                        <div class="form-floating mb-3">
+                            <div class="col-lg-12">
+                                <input type="email" class="form-control rounded-3 p-3" id="email"
+                                    placeholder="name@example.com">
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <div class="col-lg-12">
+                                <input type="password" class="form-control rounded-3 p-3" id="password"
+                                    placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <div class="col-lg-12">
+                                <input type="tel" class="form-control rounded-3 p-3" id="tel" placeholder="tel">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- message ou commentaire  -->
+                    <div class="col-lg-5">
+                        <div class="col-lg-12">
+                            <div class="mb-3">
+                                <label for="commentaire" class="form-label">message</label>
+                                <textarea class="form-control" id="commentaire" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn btn-outline-danger w-100 p-3">Envoyer votre
+                                formulaire</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- section rdv -->
+    <section class="rdv bg-success p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="fs-1 shadow my-2">Prendre un rendez-vous</h2>
+
+                    <p class="my-4"><i class="fas fa-map-marker-alt "></i>localisaion</p>
+                    <p class="my-4"><i class="fas fa-envelope"></i> contact@gamil.com</p>
+                    <p class="my-4"><i class="fas fa-phone"></i> tel: 05 55 21 36 12</p>
+
+                    <p class="my-4">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i> <i class="fab fa-linkedin"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- footer -->
+        <section class="footer p-5 mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <p><a class="navbar-brand" href="#"><span class="fw-bold text-danger">E</span>store</a></p>
+                        <p class="text-black-50 fw-bold">
+                            Découvrez une expérience de shopping en ligne inégalée chez <span class="text-danger fw-bolder">E</span>store, votre destination ultime pour la mode. Nous proposons une vaste collection de vêtements tendance pour hommes, femmes et enfants
+                        </p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="text-center">liens rapides</h4>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-auto text-center" aria-current="page" href="#">accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">a propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">produits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">s'inscrire</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">se connecter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="text-center">liens produits</h4>
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-auto text-center" aria-current="page" href="#">enfants</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">femmes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-auto text-center" href="#">hommes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="text-center"> liens réseaux sociaux</h4>
+                        <span class="mx-auto text-center d-flex justify-content-evenly mt-4">
+                            <i class="fab fa-whatsapp fs-4"></i>
+                            <i class="fab fa-facebook fs-4"></i>
+                            <i class="fab fa-linkedin fs-4" aria-hidden="true"></i>
+                            <i class="fab fa-youtube fs-4" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
